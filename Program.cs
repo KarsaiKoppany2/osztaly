@@ -2,6 +2,11 @@
 
 Auto kek = new Auto(2020, "Focus", "Ford");
 Auto zold = new Auto(3100, "Golf", "Volkswagen");
+Auto piros = new Auto(2018, "Civic", "Honda");
 
-Console.WriteLine($"Kék autó: {kek.Marka} {kek.Modell}, gyártási év: {kek.GyartasiEv}");
-Console.WriteLine($"Zöld autó: {zold.Marka} {zold.Modell}, gyártási év: {zold.GyartasiEv}");
+List<Auto> garazs = new List<Auto> { kek, zold, piros };
+
+foreach(Auto seged in garazs) 
+{
+    seged.KiirAdatok();
+}
