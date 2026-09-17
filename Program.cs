@@ -10,3 +10,6 @@ foreach(Auto seged in garazs)
 {
     seged.KiirAdatok();
 }
+
+double atlag = garazs.Average(x => x.GyartasiEv);
+Console.WriteLine($"Átlag gyártási év: {atlag}");
